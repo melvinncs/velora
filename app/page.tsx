@@ -1,5 +1,11 @@
-import { Hero } from "./hero";
+import { CompanyTrustPage } from "@/components/page/company-trust";
+import { HeroPage } from "@/components/page/hero";
 
 export default function Home() {
-  return <Hero />;
+  return (
+    <>
+      <HeroPage />
+      <CompanyTrustPage />
+    </>
+  );
 }

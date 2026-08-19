@@ -177,4 +177,62 @@
   .gradient-neon {
     background: linear-gradient(135deg, #c8f031, rgba(189, 255, 0, 0.4), transparent);
   }
+  .gradient-ellipse-glow {
+    background: radial-gradient(
+      65% 60% at 50% 0%,
+      rgba(200, 240, 49, 0.55) 0%,
+      rgba(200, 240, 49, 0.25) 30%,
+      rgba(200, 240, 49, 0.08) 55%,
+      rgba(255, 255, 255, 0) 75%
+    );
+  }
+  .gradient-ellipse-glow-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    pointer-events: none;
+    background: radial-gradient(
+      circle 550px at 50% 0%,
+      rgba(200, 240, 49, 0.55) 0%,
+      rgba(200, 240, 49, 0.25) 30%,
+      rgba(200, 240, 49, 0.08) 55%,
+      rgba(255, 255, 255, 0) 75%
+    );
+  }
+  .sparkleRing {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background:
+      linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(180deg, #c8f031, rgba(206, 228, 249, 0)) border-box;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    .sparkle-ring-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sparkle-ring-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200, 240, 49, 0.3) 0%, rgba(200, 240, 49, 0) 70%);
+    filter: blur(20px);
+    z-index: -1;
+  }
 }

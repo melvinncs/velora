@@ -1,11 +1,13 @@
+import { Sparkles } from "lucide-react";
+
 import { Button } from "@/components/ui/button";
 
 export function HeroContent() {
   return (
     <section className="flex max-w-[1100px] flex-col items-center gap-5 px-4 text-center">
-      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#595959]">
-        Your always-on content team
-      </p>
+      <div className="sparkleRing">
+        <Sparkles className="size-4 text-[#8ebf00]" />
+      </div>
       <h1 className="max-w-[1080px] font-heading text-[clamp(2.65rem,5.6vw,4.5rem)] font-medium leading-[1.1] tracking-[-0.045em] text-[#172a41]">
         <span className="sm:whitespace-nowrap sm:block">Your Autonomous AI Agent for</span>{" "}
         <span className="sm:whitespace-nowrap sm:block">Social Media &amp; Content Ops</span>
