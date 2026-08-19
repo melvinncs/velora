@@ -1,11 +1,5 @@
-import { CompanyTrustPage } from "@/components/page/company-trust";
-import { HeroPage } from "@/components/page/hero";
+import { HomePage } from "@/components/page/index";
 
 export default function Home() {
-  return (
-    <>
-      <HeroPage />
-      <CompanyTrustPage />
-    </>
-  );
+  return <HomePage />;
 }

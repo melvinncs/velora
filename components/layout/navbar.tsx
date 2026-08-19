@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export function NavigationBar() {
   return (
-    <nav className="mx-auto flex w-full max-w-[1185px] items-center justify-between gap-5 rounded-[90px] bg-[#070707] px-4 py-4.5 mt-0 sm:px-7 lg:px-9">
+    <nav className="mx-auto flex w-full max-w-[1185px] items-center justify-between gap-5 rounded-[90px] bg-[#070707] px-4 py-4.5 mt-12 sm:px-7 lg:px-9">
       <Link href="#top" className="flex shrink-0 items-center gap-2.5" aria-label="Velora home">
         <div className="relative size-10 overflow-hidden">
           <Image
