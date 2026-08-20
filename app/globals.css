@@ -177,28 +177,33 @@
   .gradient-neon {
     background: linear-gradient(135deg, #c8f031, rgba(189, 255, 0, 0.4), transparent);
   }
-  .gradient-ellipse-glow {
-    background: radial-gradient(
-      65% 60% at 50% 0%,
-      rgba(200, 240, 49, 0.55) 0%,
-      rgba(200, 240, 49, 0.25) 30%,
-      rgba(200, 240, 49, 0.08) 55%,
-      rgba(255, 255, 255, 0) 75%
-    );
-  }
+  .gradient-ellipse-white-top {
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 140%;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(
+        ellipse at center,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 255, 255, 0.6) 40%,
+        rgba(255, 255, 255, 0) 75%
+      );
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(10px);
+    }
   .gradient-ellipse-glow-bg {
-    position: absolute;
-    inset: 0;
-    z-index: -10;
-    pointer-events: none;
-    background: radial-gradient(
-      circle 550px at 50% 0%,
-      rgba(200, 240, 49, 0.55) 0%,
-      rgba(200, 240, 49, 0.25) 30%,
-      rgba(200, 240, 49, 0.08) 55%,
-      rgba(255, 255, 255, 0) 75%
-    );
-  }
+      position: absolute;
+      inset: 0;
+      top: 0;
+      height: 700px;
+      z-index: -10;
+      pointer-events: none;
+      background: linear-gradient(180deg, #e4ff85 0%, #f6ffe0 45%, #ffffff 100%);
+    }
   .sparkleRing {
     width: 44px;
     height: 44px;

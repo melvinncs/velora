@@ -9,9 +9,16 @@ import { Footer } from "@/components/layout/footer";
 
 export const HomePage = () => {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background relative">
       <NavigationBar />
-      <HeroPage />
+
+      <div className="relative isolate overflow-hidden">
+        <div className="gradient-ellipse-glow-bg" />
+        <div className="gradient-ellipse-white-top" />
+        <div className="h-[100px] sm:h-[108px] lg:h-[116px]" />
+        <HeroPage />
+      </div>
+
       <CompanyTrust />
       <About />
       <Features />
