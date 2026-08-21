@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Bell, Sparkles } from "lucide-react";
+import { ImageMarquee } from "@/components/ui/marquee";
 
 import { Button } from "@/components/ui/button";
 
@@ -209,26 +210,7 @@ function DashboardPreview() {
               </p>
             </div>
 
-            <div className="relative flex items-center justify-center gap-3 pb-2 pt-6">
-              <div
-                className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 rounded-full bg-[#bdff00]/40 blur-3xl"
-                style={{ width: "260px", height: "180px" }}
-              />
-
-              {["/foto1.jpg", "/foto2.jpg", "/foto3.jpg", "/foto4.jpg"].map((src) => (
-                <div
-                  key={src}
-                  className="relative z-10 aspect-square w-28 shrink-0 overflow-hidden rounded-xl border border-[#f7f7f7] bg-white shadow-md sm:w-36"
-                >
-                  <Image
-                    src={src}
-                    alt="Preview"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              ))}
-            </div>
+            <ImageMarquee />
           </div>
         </main>
       </div>
