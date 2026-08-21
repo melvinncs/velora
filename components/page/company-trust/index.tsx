@@ -32,7 +32,7 @@ const row2Companies = [
 
 export const CompanyTrust: NextPage = () => {
   return (
-    <section className="relative w-full overflow-hidden bg-white py-16">
+    <section className="relative w-full overflow-hidden bg-white pt-0 pb-16">
       {/* CSS Keyframes Marquee Animation */}
       <style>{`
         @keyframes marquee {
