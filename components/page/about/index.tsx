@@ -12,7 +12,7 @@ const stats = [
     label: "AI Content Co-Pilot",
     progressWidth: "w-8", // 30%
   },
-  {
+  { 
     value: "85%",
     label: "Hours saved per campaign",
     progressWidth: "w-20", // 80%

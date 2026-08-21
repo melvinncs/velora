@@ -28,7 +28,7 @@ const row2Companies = [
   { name: "Layers", Icon: Layers },
   { name: "Lightbox", Icon: Package },
   { name: "Luminous", Icon: Waves },
-];
+]; 
 
 export const CompanyTrust: NextPage = () => {
   return (

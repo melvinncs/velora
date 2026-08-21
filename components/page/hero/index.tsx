@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Bell, Sparkles } from "lucide-react";
 import { ImageMarquee } from "@/components/ui/marquee";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button"; 
 
 const sidebarItems = [
   { icon: "/sparkle.svg", alt: "Sparkle", active: true },

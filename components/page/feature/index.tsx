@@ -2,7 +2,7 @@
  
 import type { NextPage } from "next";
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef } from "react"; 
 import { motion, useInView, type Variants } from "framer-motion";
 import { Zap, Target, Ticket, Calendar, Share2, ChevronDown } from "lucide-react";
 

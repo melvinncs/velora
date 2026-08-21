@@ -131,5 +131,5 @@ export function NavigationBar() {
         )}
       </AnimatePresence>
     </header>
-  );
+  ); 
 }

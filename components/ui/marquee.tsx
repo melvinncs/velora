@@ -23,7 +23,7 @@ export function ImageMarquee() {
           height: "180px",
         }}
       />
-
+ 
       {/* Desktop */}
       <div className="relative z-10 hidden items-center justify-center gap-3 pb-2 pt-6 sm:flex">
         {images.map((src) => (
